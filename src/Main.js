@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 
 import Converter from './modules/converter/components/Converter';
-
+import Chart from './modules/chart/components/Chart';
 
 const Graph = () => {
     return (
@@ -20,7 +20,7 @@ const Graph = () => {
                     <Converter />
                 </Grid>
                 <Grid item sm = {12}>
-                
+                    <Chart />
                 </Grid>
             </Grid>
         </Container>

@@ -37,7 +37,7 @@ const Converter = () => {
     }
     useEffect(() => {  
         dispatch(getRatesList());
-    }, [getRatesList]);
+    }, []);
 
     useEffect(() => {  
         if (fromAmount && fromCurrency && toCurrency) {
@@ -57,7 +57,6 @@ const Converter = () => {
                         margin = 'none' 
                         value = {fromAmount}
                         customInput={TextField} 
-                        thousandSeparator = {true}
                         decimalScale = '2'
                         allowNegative = {false}
                         onChange = {handleChangeFromAmount}
