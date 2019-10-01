@@ -2,8 +2,8 @@ import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import fetchMock from 'fetch-mock';
 
-import { getRatesList, setAmount, setCurrency, switchCurrency } from './actions';
-import * as constants  from '../../constants';
+import { getRatesList, setAmount, setCurrency, switchCurrency } from '../../../modules/converter/actions';
+import * as constants  from '../../../constants';
 
 const ratesObj =  {
     "CAD": 1.4466,

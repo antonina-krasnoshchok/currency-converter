@@ -1,5 +1,5 @@
-import { setFilter } from './actions';
-import * as constants  from '../../constants';
+import { setFilter } from '../../../modules/chart/actions';
+import * as constants  from '../../../constants';
 
 describe('Chart actions', () => {
     it('should set filter for chart', () => {

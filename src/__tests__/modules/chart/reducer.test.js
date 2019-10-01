@@ -1,5 +1,5 @@
-import chart from './reducer';
-import * as constants  from '../../constants';
+import chart from '../../../modules/chart/reducer';
+import * as constants  from '../../../constants';
 
 describe('Chart reducer', () => {
     it ('should handle SET_FILTER', () => {

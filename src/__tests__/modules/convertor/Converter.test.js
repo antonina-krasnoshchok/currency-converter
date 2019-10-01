@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { mount } from 'enzyme';
-import Converter from './index';
+import Converter from '../../../modules/converter/components/Converter/index';
 import configureMockStore from 'redux-mock-store';
 
 import NumberFormat from 'react-number-format';

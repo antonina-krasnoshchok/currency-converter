@@ -1,5 +1,5 @@
-import converter from './reducer';
-import * as constants  from '../../constants';
+import converter from '../../../modules/converter/reducer';
+import * as constants  from '../../../constants';
 
 const ratesObj =  {
     "CAD": 1.4466,
