@@ -28,7 +28,7 @@ describe('Converter component', () => {
     const container = mount(<Provider store={store}><Converter /></Provider>);
 
     it('should have NumberFormat component', () => {
-      expect(container.find(NumberFormat).length).toEqual(1);
+      expect(container.find(NumberFormat)).toHaveLength(1);
     });
 
     it('should set the fromAmount value on change event', () => {
@@ -41,7 +41,7 @@ describe('Converter component', () => {
     });
 
     it('should have Select components', () => {
-      expect(container.find(Select).length).toEqual(2);
+      expect(container.find(Select)).toHaveLength(2);
     });
 
     it('should set the fromCurrency value on change event', () => {
@@ -65,6 +65,8 @@ describe('Converter component', () => {
     });
 
     it('should have Button component', () => {
-      expect(container.find(IconButton).length).toEqual(1);
+      expect(container.find(IconButton)).toHaveLength(1);
     });
+
+   
 });
